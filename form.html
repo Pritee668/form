@@ -1,0 +1,69 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>js</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link  rel="stylesheet" href="style.css">
+    <style>
+      body{
+        background-color:cadetblue
+      }
+      #form-container{
+        margin-left: 350px;
+        height: 360px;
+        width: 500px;
+        border: 2px solid black;
+        background-color: darkorange;
+        border-radius: 25px;
+        text-align: center;
+        margin-top: 160px;
+        font-size: 28px;
+        color:cyan;
+      }
+      input{
+        font-size: 25px;
+        margin-bottom: 8px;
+      }
+      h2{
+        color:chartreuse
+      }
+      .submit{
+        background-color: chartreuse;
+        margin-top: 20px;
+        color:blue;
+        border-radius: 10px;
+        box-shadow: 2px 2px 3px gray;
+      }
+      .submit:hover{
+        box-shadow: 4px 4px 5px black;
+      }
+      .error{
+        color: red;
+        margin: 0px;
+        margin-left: 8px;
+        font-size: 23px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+    
+    </div>
+    <div id="form-container">
+      <h2>Login</h2>
+      <form action="" onsubmit="return validateform()">
+        <label for="user">Username:-</label>
+        <input type="text" placeholder="username" id="user"><br>
+        <p id="user-error" class="error"></p>
+        <label for="pass">Password:-</label>
+        <input type="password" placeholder="password" id="pass"><br>
+        <p id="pass-error" class="error"></p>
+        <input type="submit" class="submit">
+
+      </form>
+    </div>
+    
+  <script src="js/form.js"></script>
+  </body>
+</html>
