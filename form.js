@@ -8,7 +8,7 @@ let flag=1;
         userP.innerHTML="UserName is empty!";
         flag=0;
     }else if(user.value.length<3){
-        userP.innerHTML="usename require min 3 char!";
+        userP.innerHTML="username require min 3 char!";
         flag=0;
     }else{
         userP.innerHTML="";
